@@ -1,0 +1,65 @@
+.player_netflix_b {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.player_netflix_b video#video_netflix[data-target=playerNetflix] {
+  width: 100%;
+  float: left;
+}
+.player_netflix_b .upperVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+}
+.player_netflix_b .controls_netflix {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+}
+.player_netflix_b .controls_netflix .bottom_controls-netflix {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+}
+.player_netflix_b .controls_netflix .bottom_controls-netflix .controls-netflix_top {
+  float: left;
+  width: 100%;
+  height: 20px;
+}
+.player_netflix_b .controls_netflix .bottom_controls-netflix .controls-netflix_bottom {
+  float: left;
+  width: 100%;
+  height: 60px;
+}
+.player_netflix_b .controls_netflix .bottom_controls-netflix .z-4 {
+  float: left;
+  background: red;
+  height: 100%;
+  width: calc(100% / 3);
+}
+.player_netflix_b .justify {
+  display: flex;
+}
+.player_netflix_b .btn-action-left {
+  float: left;
+  background: transparent;
+  border: transparent;
+}
+.player_netflix_b .btn-action-left[action=play_pause] {
+  margin-right: 10px;
+}
+.player_netflix_b .btn-action-left img {
+  width: 20px;
+  filter: brightness(0) invert(1);
+}
+
+/*# sourceMappingURL=player_netflix.css.map */
