@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Player Netflix</title>
+	<link rel="stylesheet" type="text/css" href="dist/player_netflix.css">
+</head>
+<body>
+<div id="video" style="max-width:70vw;"></div>
+</body>
+<script src="dist/jquery-2.2.4.js"></script>
+<script src="dist/player_netflix.js"></script>
+<script type="text/javascript">
+	var video = {
+		'div_id'					: 'video',
+		'title' 					: 'The 100',
+		'subtitle'					: 'T1:E1 Pilot',
+		'is_movie'					: 0,
+		'time_sleep'				: 5000,
+		'source'					: [
+			'URL 1',
+			'URL 2',
+			'URL 3'
+		],
+		'source_description'		: 		[
+			'English',
+			'Portuguese',
+			'Spanish',
+		],
+		'next_ep'					: 'URL',
+	}
+	const videoNetflix = new VideoPlayer_Netflix(  video  );
+	console.log(videoNetflix);
+</script>
+</html>
