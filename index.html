@@ -6,8 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="dist/player_netflix.css">
 </head>
 <body>
-<div id="video" style="max-width:70vw;"></div>
+<div id="video" style="height: 100vh;"></div>
 </body>
+<style>
+	body{
+		margin:0;
+	}
+</style>
 <script src="dist/jquery-2.2.4.js"></script>
 <script src="dist/player_netflix.js"></script>
 <script type="text/javascript">
@@ -16,9 +21,15 @@
 		'title' 					: 'The 100',
 		'subtitle'					: 'T1:E1 Pilot',
 		'is_movie'					: 0,
+		'object_fit'				: 'fill',
 		'time_sleep'				: 5000,
+		'type'						: [
+				'video/mp4',
+				'video/mp4',
+				'video/mp4'
+		],
 		'source'					: [
-			'URL 1',
+			'https://www.w3schools.com/html/mov_bbb.mp4',
 			'URL 2',
 			'URL 3'
 		],
